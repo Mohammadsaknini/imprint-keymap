@@ -5,11 +5,43 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/mouse.h>
 
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
+
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp C>, <&macro_release &kp LCTRL>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp V>, <&macro_release &kp LCTRL>;
+        };
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp X>, <&macro_release &kp LCTRL>;
+        };
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp Z>, <&macro_release &kp LCTRL>;
+        };
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp Y>, <&macro_release &kp LCTRL>;
+        };
+        lang: lang {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LALT>, <&macro_tap &kp LSHFT>, <&macro_release &kp LALT>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -26,15 +58,14 @@
                                        &kp LGUI  &mo 1    &trans      &mkp MCLK   &mkp LCLK  &mkp RCLK
             >;
         };
-
         commands_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &rgb_ug RGB_TOG    &trans     &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans            &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &kp N1  &kp N2  &kp N3  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &kp N0  &trans                            &trans    &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &rgb_ug RGB_BRI   &rgb_ug RGB_BRD    &rgb_ug RGB_TOG     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &copy   &cut      &paste                                 &trans     &trans     &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans            &redo   &undo     &lang                                  &trans     &trans     &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans            &kp LEFT   &kp RIGHT    &kp UP                           &kp DOWN     &trans     &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans            &trans  &trans    &trans                                 &trans     &trans     &trans
+&trans  &trans  &trans  &kp N0  &trans                            &trans    &trans                                 &trans     &trans     &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
             >;
