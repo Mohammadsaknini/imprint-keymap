@@ -59,7 +59,7 @@
             bindings = <&kp LSHFT>, <&kp CAPSLOCK>;
         };
     };
-`
+
     keymap {
         compatible = "zmk,keymap";
          default_layer {
