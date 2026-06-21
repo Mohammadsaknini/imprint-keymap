@@ -76,8 +76,8 @@
 &td_caps   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp SEMI  &td_caps
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
 &trans     &trans  &mkp LCLK &mkp RCLK &mkp MCLK                                        &kp SQT   &kp LBKT  &kp RBKT   &trans    &trans      
-                                       &kp RET   &kp DEL  &kp ESC       &trans  &kp BSPC  &kp SPACE
-                                       &kp LALT  &td_layer    &kp LGUI     &kp LGUI   &td_layer   &RALT
+                                       &kp RET   &kp DEL  &kp LGUI       &k RGUI  &kp BSPC  &kp SPACE
+                                       &kp LALT  &td_layer    &kp ESC     &trans   &td_layer   &RALT
             >;
         };
         commands_layer {
