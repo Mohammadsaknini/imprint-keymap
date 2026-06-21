@@ -77,7 +77,7 @@
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
 &trans     &trans  &mkp LCLK &mkp RCLK &mkp MCLK                                        &kp SQT   &kp LBKT  &kp RBKT   &trans    &trans      
                                        &kp RET   &kp DEL  &kp LGUI       &k RGUI  &kp BSPC  &kp SPACE
-                                       &kp LALT  &td_layer    &kp ESC     &trans   &td_layer   &RALT
+                                       &kp LALT  &td_layer    &kp ESC     &trans   &td_layer   &kp RALT
             >;
         };
         commands_layer {
