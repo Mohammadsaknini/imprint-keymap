@@ -72,12 +72,12 @@
             bindings = <
 &kp BSLH   &kp F1  &kp F2    &kp F3    &kp F4    &kp F5                     &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
 &kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp EQUAL
-&kp TAB    &kp Q   &kp W     &kp E     &kp R     &kp T                      &kp Y      &kp U     &kp I      &kp O     &kp SEMI     &kp MINUS
-&td_caps   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P  &td_caps
+&kp TAB    &kp Q   &kp W     &kp E     &kp R     &kp T                      &kp Y      &kp U     &kp I      &kp O     &kp SEMI  &kp MINUS
+&td_caps   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P     &td_caps
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
-&trans     &trans  &mkp LCLK &mkp RCLK &mkp MCLK                                        &kp SQT   &kp LBKT  &kp RBKT   &trans    &trans      
-                                       &kp RET   &kp DEL  &kp LGUI       &k RGUI  &kp BSPC  &kp SPACE
-                                       &kp LALT  &td_layer    &kp ESC     &trans   &td_layer   &kp RALT
+&trans     &trans  &mkp LCLK &mkp RCLK &mkp MCLK                                       &kp SQT   &kp LBKT   &kp RBKT  &trans    &trans      
+                                       &kp RET   &kp DEL  &kp LGUI       &kp RGUI  &kp BSPC   &kp SPACE
+                                       &kp LALT  &td_layer    &kp ESC    &trans  &td_layer &kp RALT
             >;
         };
         commands_layer {
