@@ -75,7 +75,7 @@
 &kp TAB    &kp Q   &kp W     &kp E     &kp R     &kp T                      &kp Y      &kp U     &kp I      &kp O     &kp SEMI  &kp MINUS
 &td_caps   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P     &td_caps
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
-&trans     &trans  &trans    &trans    &mkp LCLK                                       &kp SQT   &kp LBKT   &kp RBKT  &trans    &trans      
+&trans     &trans  &trans    &trans    &mkp LCLK                                       &kp CARET   &kp AMPERSAND   &kp STAR  &trans    &trans      
                                        &kp RET   &kp DEL   &kp LGUI       &kp RGUI  &kp BSPC   &kp SPACE
                                        &kp LALT  &td_layer &kp GRAVE      &trans  &td_layer &kp RALT
             >;
