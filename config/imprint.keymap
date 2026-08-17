@@ -10,6 +10,17 @@
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_alt_f4 {
+            timeout-ms = <50>;
+            key-positions = <71 81>;
+            layers = <0>;
+            bindings = <&kp LA(F4)>;
+        };
+    };
+
     macros {
         copy: copy {
             compatible = "zmk,behavior-macro";
@@ -64,6 +75,12 @@
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&to 1>;
         };
+        td_alt: tap_dance_alt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LALT>, <&kp LA(TAB)>;
+        };
     };
     
     keymap {
@@ -77,7 +94,7 @@
 &kp LCTRL  &kp Z   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RCTRL
 &trans     &trans  &trans    &trans    &mkp LCLK                                       &kp CARET   &kp AMPERSAND   &kp STAR  &trans    &trans      
                                        &kp RET   &kp DEL   &kp LGUI       &kp RGUI  &kp BSPC   &kp SPACE
-                                       &kp LALT  &td_layer &kp GRAVE      &trans  &td_layer &kp RALT
+                                        &kp LALT  &td_layer &kp GRAVE      &trans  &td_layer &td_alt
             >;
         };
         commands_layer {
