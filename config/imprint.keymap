@@ -56,8 +56,8 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DEL>, <&kp F4>;
-            mods = <(MOD_LALT)>;
-            keep-mods = <(MOD_LALT)>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
         };
         td_caps: tap_dance_caps {
             compatible = "zmk,behavior-tap-dance";
@@ -72,25 +72,25 @@
             bindings = <&mo 1>, <&to 1>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
          default_layer {
             bindings = <
 &kp BSLH   &kp F1  &kp F2    &kp F3    &kp F4    &kp F5                     &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
-&kp ESC  &kp N1  &kp N2    &kp N3    &kp N4    &kp N5                       &kp LBKT     &kp RBKT    &kp SQT     &kp N9    &kp N0    &kp EQUAL
+&kp ESC  &kp N1  &kp AT_SIGN    &kp HASH    &kp DOLLAR    &kp PERCENT                       &kp LBKT     &kp RBKT    &kp SQT     &kp LEFT_PARENTHESIS    &kp N0    &kp EQUAL
 &kp TAB    &kp Q   &kp W     &kp E     &kp R     &kp T                      &kp Y      &kp U     &kp I      &kp O     &kp SEMI  &kp MINUS
 &trans   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P     &kp FSLH
 &kp LCTRL  &td_caps   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &td_caps  &kp RCTRL
 &trans     &trans  &kp Z   &trans    &mkp LCLK                                       &kp CARET   &kp AMPERSAND   &kp STAR  &trans    &trans      
                                        &kp RET   &del_alt_f4 &kp LGUI     &kp RGUI  &kp BSPC   &kp SPACE
-                                        &kp LALT  &td_layer &kp GRAVE      &trans  &td_layer &kp RALT
+                                        &kp LALT  &mo 1 &kp GRAVE      &trans  &mo 1 &kp RALT
             >;
         };
         commands_layer {
             bindings = <
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &rgb_ug RGB_COLOR_HSB(60,40,50)   &rgb_ug RGB_BRI    &rgb_ug RGB_TOG     &rgb_ug RGB_BRD     &trans     &lang
-&trans  &trans  &trans  &trans  &trans  &trans                                               &redo      &undo        &trans     &trans     &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                               &reDRGB_BRDo      &undo        &trans     &trans     &kp RIGHT_PARENTHESIS     &trans
 &trans  &trans  &kp N7  &kp N8  &kp N9  &trans                                               &trans     &kp RA(U)    &kp UP     &kp RA(O)  &trans     &trans
 &trans  &kp RA(A)  &kp N4  &kp N5  &kp N6  &trans                                               &trans     &kp LEFT     &kp DOWN   &kp RIGHT   &trans     &trans
 &trans  &trans  &kp N1  &kp N2  &kp N3  &kp RA(S)                                               &trans     &cut        &copy     &paste     &trans     &trans
