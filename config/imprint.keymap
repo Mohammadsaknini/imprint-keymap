@@ -83,8 +83,8 @@
 &trans   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P     &kp FSLH
 &kp LCTRL  &td_caps   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &td_caps  &kp RCTRL
 &trans     &trans  &kp Z   &trans    &mkp LCLK                                       &kp CARET   &kp AMPERSAND   &kp STAR  &trans    &trans      
-                                       &kp LALT   &del_alt_f4 &kp LGUI     &kp RGUI  &kp BSPC   &kp RET
-                                        &kp SPACE  &mo 1 &kp GRAVE      &trans  &mo 1 &kp RALT
+                                       &kp LALT   &del_alt_f4 &kp LGUI     &kp RGUI  &kp BSPC   &kp RALT
+                                        &kp SPACE  &mo 1 &kp GRAVE      &trans  &mo 1 &kp RET
             >;
         };
         commands_layer {
