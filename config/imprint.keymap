@@ -76,7 +76,7 @@
 &kp TAB   &kp A   &kp S     &kp D     &kp F     &kp G                      &kp H      &kp J     &kp K      &kp L     &kp P     &kp FSLH
 &kp LCTRL  &kp LSHIFT   &kp X     &kp C     &kp V     &kp B                      &kp N      &kp M     &kp COMMA  &kp DOT   &kp SEMI  &kp RIGHT_SHIFT
 &trans     &trans  &kp Z   &trans    &mkp LCLK                                       &kp CARET   &kp AMPERSAND   &kp STAR  &kp PAGE_UP    &kp PAGE_DOWN      
-                                       &kp LALT   &kp LGUI &kp BSLH     &kp MINUS  &kp BSPC   &td_caps
+                                       &kp LALT   &kp LGUI &kp BSLH     &kp MINUS  &kp BSPC   &trans
                                         &kp SPACE  &mo 1 &kp GRAVE      &kp EQUAL  &mo 1 &kp RET
             >;
         };
