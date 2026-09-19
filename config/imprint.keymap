@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/mouse.h>
 
 / {
+    chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
 
     macros {
         sc_mo1: macro_sc_mo1 {
